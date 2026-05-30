@@ -135,7 +135,8 @@ function App() {
                         }
 
                         return <Scaffold
-                            autoOpenDrawer={false}>
+                            autoOpenDrawer={false}
+                            logo={"/logo.svg"}>
                             <AppBar title={"Adarsh Singh — Portfolio Admin"}/>
                             <Drawer/>
                             <NavigationRoutes/>
