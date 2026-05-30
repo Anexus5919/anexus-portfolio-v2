@@ -59,6 +59,7 @@ export const socialsCollection = buildCollection({
   path: "socials",
   icon: "Share",
   group: "Site",
+  description: "Links shown in the navbar dock (GitHub, LinkedIn, email).",
   initialSort: ["order", "asc"],
   properties: {
     name: {
@@ -81,6 +82,7 @@ export const skillsCollection = buildCollection({
   path: "skills",
   icon: "Code",
   group: "Content",
+  description: "Skill categories and the chips shown under each.",
   initialSort: ["order", "asc"],
   properties: {
     name: {
@@ -112,6 +114,7 @@ export const workCollection = buildCollection({
   path: "work",
   icon: "Work",
   group: "Content",
+  description: "Work experience, shown most-recent first.",
   initialSort: ["order", "asc"],
   properties: {
     company: { name: "Company", dataType: "string", validation: { required: true } },
@@ -140,6 +143,7 @@ export const educationCollection = buildCollection({
   path: "education",
   icon: "School",
   group: "Content",
+  description: "Schools and degrees.",
   initialSort: ["order", "asc"],
   properties: {
     school: { name: "School", dataType: "string", validation: { required: true } },
@@ -160,6 +164,7 @@ export const projectsCollection = buildCollection({
   path: "projects",
   icon: "Dashboard",
   group: "Content",
+  description: "The project cards shown on your site.",
   initialSort: ["order", "asc"],
   properties: {
     title: { name: "Title", dataType: "string", validation: { required: true } },
@@ -197,6 +202,7 @@ export const openSourceCollection = buildCollection({
   path: "openSource",
   icon: "MergeType",
   group: "Content",
+  description: "Open-source contributions and merged PRs.",
   initialSort: ["order", "asc"],
   properties: {
     name: { name: "Project name", dataType: "string", validation: { required: true } },
@@ -228,6 +234,7 @@ export const messagesCollection = buildCollection({
   path: "messages",
   icon: "Email",
   group: "Inbox",
+  description: "Contact-form submissions from your site.",
   initialSort: ["createdAt", "desc"],
   permissions: () => ({ read: true, edit: true, create: false, delete: true }),
   properties: {
