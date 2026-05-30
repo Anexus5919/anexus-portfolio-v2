@@ -12,8 +12,8 @@ import {
 export const DATA = {
   name: "Adarsh Singh",
   initials: "AS",
-  // NOTE: update this to your new deployment URL once it's live (used for SEO + OG images).
-  url: "https://anexus-portfolio.vercel.app",
+  // Live production URL (used for SEO + OG images).
+  url: "https://anexus-portfolio-v2.vercel.app",
   location: "Mumbai, Maharashtra, India",
   locationLink: "https://www.google.com/maps/place/Mumbai",
   description:
