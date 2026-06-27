@@ -10,12 +10,9 @@ const BLUR_FADE_DELAY = 0.04;
 export default async function OpenSourceSection() {
   const content = await getContent();
   const projects = content.openSource;
-  const totalPRs = projects.reduce((sum, p) => sum + p.prCount, 0);
-  const externalOrgs = new Set(
-    projects
-      .map((p) => p.repo.split("/")[0])
-      .filter((org) => org.toLowerCase() !== "anexus5919")
-  ).size;
+  const totalPRs = 177;
+  const totalProjects = 15;
+  const totalOrgs = 12;
 
   return (
     <section id="open-source" className="overflow-hidden">
@@ -36,9 +33,10 @@ export default async function OpenSourceSection() {
             </h2>
             <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed text-balance text-center">
               I&apos;ve landed {totalPRs}+ merged pull requests across{" "}
-              {externalOrgs} open-source organizations - from CI/CD platforms and
-              component libraries to editors and educational tools. I enjoy diving
-              into unfamiliar codebases and shipping fixes that real users rely on.
+              {totalProjects}+ open-source projects and {totalOrgs}+ organizations
+              and maintainers - from CI/CD platforms and component libraries to
+              editors and educational tools. I enjoy diving into unfamiliar
+              codebases and shipping fixes that real users rely on.
             </p>
           </div>
         </div>
@@ -121,7 +119,8 @@ export default async function OpenSourceSection() {
           className="mx-auto gap-1.5 text-xs font-medium border-border"
         >
           <GitMerge className="size-3.5 text-violet-500" />
-          {totalPRs} pull requests merged · {externalOrgs} organizations
+          {totalPRs}+ pull requests merged · {totalProjects}+ projects ·{" "}
+          {totalOrgs}+ organizations
         </Badge>
       </div>
     </section>
