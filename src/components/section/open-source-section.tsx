@@ -95,13 +95,13 @@ export default async function OpenSourceSection() {
                           href={pr.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="group flex items-start gap-2 text-muted-foreground hover:text-foreground transition-colors"
+                          className="group flex items-start gap-2 transition-colors"
                         >
-                          <GitPullRequest className="size-3.5 mt-0.5 shrink-0 text-muted-foreground group-hover:text-violet-500 transition-colors" />
-                          <span className="font-mono text-[11px] tabular-nums shrink-0 pt-px">
+                          <GitPullRequest className="size-3.5 mt-0.5 shrink-0 text-muted-foreground/50 group-hover:text-violet-500 transition-colors" />
+                          <span className="font-mono text-[11px] tabular-nums shrink-0 pt-px text-muted-foreground/80">
                             {pr.number}
                           </span>
-                          <span className="min-w-0 break-words text-xs leading-snug">
+                          <span className="min-w-0 break-words text-xs leading-snug text-foreground/90 group-hover:text-foreground transition-colors">
                             {pr.title}
                           </span>
                         </Link>
