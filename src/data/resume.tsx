@@ -441,15 +441,31 @@ export const DATA = {
       name: "Jenkins",
       repo: "jenkinsci/jenkins",
       repoUrl: "https://github.com/jenkinsci/jenkins",
-      prCount: 1,
+      prCount: 4,
       description:
-        "Contributed a UI fix to the world's leading open-source CI/CD automation server, preventing long parameter values from overflowing the build parameters dialog.",
+        "Shipped multiple UI fixes to the world's leading open-source CI/CD automation server, spanning the build parameters dialog, the build-log and console pages, and autocomplete dropdown behavior.",
       prs: [
         {
           number: "#26574",
           title:
             "fix: prevent long parameter values from overflowing the parameters dialog",
           url: "https://github.com/jenkinsci/jenkins/pull/26574",
+        },
+        {
+          number: "#26637",
+          title: "fix: restore cancel button on build log page",
+          url: "https://github.com/jenkinsci/jenkins/pull/26637",
+        },
+        {
+          number: "#26727",
+          title: "Restore job name in run console and changes page titles",
+          url: "https://github.com/jenkinsci/jenkins/pull/26727",
+        },
+        {
+          number: "#26884",
+          title:
+            "Fix combobox and autocomplete dropdown selection beyond the first item",
+          url: "https://github.com/jenkinsci/jenkins/pull/26884",
         },
       ],
     },
@@ -478,9 +494,9 @@ export const DATA = {
       name: "MUI X",
       repo: "mui/mui-x",
       repoUrl: "https://github.com/mui/mui-x",
-      prCount: 3,
+      prCount: 21,
       description:
-        "Shipped multiple fixes across the Scheduler and Charts packages of MUI's advanced React component library - improving accessibility, axis state persistence, and navigation UX.",
+        "Shipped 20+ fixes across MUI's advanced React component library, spanning the Scheduler, Charts, Pickers, and Data Grid packages, improving accessibility, recurring-event handling, and date-adapter correctness.",
       prs: [
         {
           number: "#22162",
@@ -498,6 +514,110 @@ export const DATA = {
           title:
             "[scheduler] Reset scroll position when navigating to a new time period",
           url: "https://github.com/mui/mui-x/pull/22036",
+        },
+        {
+          number: "#22266",
+          title:
+            "[scheduler] Complete ARIA grid semantics on EventTimeline and EventCalendar",
+          url: "https://github.com/mui/mui-x/pull/22266",
+        },
+        {
+          number: "#22476",
+          title:
+            "[scheduler] Deduplicate staged ranges within the debounce window",
+          url: "https://github.com/mui/mui-x/pull/22476",
+        },
+        {
+          number: "#22552",
+          title: "[scheduler] Show scope dialog when deleting a recurring event",
+          url: "https://github.com/mui/mui-x/pull/22552",
+        },
+        {
+          number: "#22773",
+          title: "[scheduler] Clear clipboard after pasting a cut event",
+          url: "https://github.com/mui/mui-x/pull/22773",
+        },
+        {
+          number: "#22774",
+          title:
+            "[pickers] Fix AdapterMomentHijri.getDaysInMonth returning the Gregorian month length",
+          url: "https://github.com/mui/mui-x/pull/22774",
+        },
+        {
+          number: "#22775",
+          title:
+            "[scheduler] Show drag placeholder when re-entering the same position",
+          url: "https://github.com/mui/mui-x/pull/22775",
+        },
+        {
+          number: "#22780",
+          title:
+            "[scheduler] Recalculate DayTimeGrid hasScroll on container resize",
+          url: "https://github.com/mui/mui-x/pull/22780",
+        },
+        {
+          number: "#22790",
+          title: "[scheduler] Validate missing and duplicate event ids",
+          url: "https://github.com/mui/mui-x/pull/22790",
+        },
+        {
+          number: "#22791",
+          title:
+            "[scheduler] Return a primitive key from the Calendar lazy-loading selector",
+          url: "https://github.com/mui/mui-x/pull/22791",
+        },
+        {
+          number: "#22792",
+          title:
+            "[scheduler] Normalize all-day recurring occurrences to whole days",
+          url: "https://github.com/mui/mui-x/pull/22792",
+        },
+        {
+          number: "#22793",
+          title:
+            "[scheduler] Recompute nowUpdatedEveryMinute only on timezone change",
+          url: "https://github.com/mui/mui-x/pull/22793",
+        },
+        {
+          number: "#22794",
+          title:
+            "[scheduler] Register auto-scroll once instead of on every render",
+          url: "https://github.com/mui/mui-x/pull/22794",
+        },
+        {
+          number: "#22795",
+          title: "[scheduler] Remove duplicate dividers in the day/time grid",
+          url: "https://github.com/mui/mui-x/pull/22795",
+        },
+        {
+          number: "#22799",
+          title:
+            "[scheduler] Remove unused --has-scroll CSS variable from DayTimeGrid",
+          url: "https://github.com/mui/mui-x/pull/22799",
+        },
+        {
+          number: "#22851",
+          title:
+            "[DataGridPremium] Escape singleSelect values in Excel export with escapeFormulas enabled",
+          url: "https://github.com/mui/mui-x/pull/22851",
+        },
+        {
+          number: "#22873",
+          title:
+            "[scheduler] Highlight only the edited occurrence of a recurring event",
+          url: "https://github.com/mui/mui-x/pull/22873",
+        },
+        {
+          number: "#22972",
+          title:
+            "[pickers] Use the Hijri day token in AdapterMomentHijri normalDateWithWeekday",
+          url: "https://github.com/mui/mui-x/pull/22972",
+        },
+        {
+          number: "#22974",
+          title:
+            "[pickers] Use calendar day tokens in AdapterMomentHijri and AdapterMomentJalaali formats",
+          url: "https://github.com/mui/mui-x/pull/22974",
         },
       ],
     },
@@ -582,9 +702,9 @@ export const DATA = {
       name: "Accord Project",
       repo: "accordproject/template-playground",
       repoUrl: "https://github.com/accordproject/template-playground",
-      prCount: 2,
+      prCount: 3,
       description:
-        "Resolved ESLint errors and warnings across the codebase and fixed UI layout issues by constraining learn layout height to prevent content overflow.",
+        "Resolved ESLint errors across the codebase, fixed a UI layout overflow, and added a confirmation modal before loading sample templates.",
       prs: [
         {
           number: "#440",
@@ -595,6 +715,12 @@ export const DATA = {
           number: "#433",
           title: "fix(ui): constrain learn layout height to prevent overflow",
           url: "https://github.com/accordproject/template-playground/pull/433",
+        },
+        {
+          number: "#868",
+          title:
+            "feat(ux): add confirmation modal before loading sample template",
+          url: "https://github.com/accordproject/template-playground/pull/868",
         },
       ],
     },
@@ -615,21 +741,6 @@ export const DATA = {
           number: "#703",
           title: "fix(volunteer): restrict YouTube embed recommendations",
           url: "https://github.com/sugarlabs/www-v2/pull/703",
-        },
-      ],
-    },
-    {
-      name: "RoamIQ",
-      repo: "Anexus5919/RoamIQ",
-      repoUrl: "https://github.com/Anexus5919/RoamIQ",
-      prCount: 1,
-      description:
-        "Delivered a major UI overhaul to this travel-discovery project, modernizing the layout and refining the overall user experience.",
-      prs: [
-        {
-          number: "#1",
-          title: "Major update in the UI",
-          url: "https://github.com/Anexus5919/RoamIQ/pull/1",
         },
       ],
     },
