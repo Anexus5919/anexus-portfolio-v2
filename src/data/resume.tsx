@@ -438,59 +438,6 @@ export const DATA = {
   ],
   openSource: [
     {
-      name: "Jenkins",
-      repo: "jenkinsci/jenkins",
-      repoUrl: "https://github.com/jenkinsci/jenkins",
-      prCount: 4,
-      description:
-        "Shipped multiple UI fixes to the world's leading open-source CI/CD automation server, spanning the build parameters dialog, the build-log and console pages, and autocomplete dropdown behavior.",
-      prs: [
-        {
-          number: "#26574",
-          title:
-            "fix: prevent long parameter values from overflowing the parameters dialog",
-          url: "https://github.com/jenkinsci/jenkins/pull/26574",
-        },
-        {
-          number: "#26637",
-          title: "fix: restore cancel button on build log page",
-          url: "https://github.com/jenkinsci/jenkins/pull/26637",
-        },
-        {
-          number: "#26727",
-          title: "Restore job name in run console and changes page titles",
-          url: "https://github.com/jenkinsci/jenkins/pull/26727",
-        },
-        {
-          number: "#26884",
-          title:
-            "Fix combobox and autocomplete dropdown selection beyond the first item",
-          url: "https://github.com/jenkinsci/jenkins/pull/26884",
-        },
-      ],
-    },
-    {
-      name: "AFFiNE",
-      repo: "toeverything/AFFiNE",
-      repoUrl: "https://github.com/toeverything/AFFiNE",
-      prCount: 2,
-      description:
-        "Shipped core editor fixes to this widely-adopted Notion-alternative workspace - aligning selection/drag-handle/cursor overlays with blocks and resolving UX inconsistencies in the AI chat interface.",
-      prs: [
-        {
-          number: "#14862",
-          title:
-            "fix(editor): align selection/handle/remote/text overlays with blocks",
-          url: "https://github.com/toeverything/AFFiNE/pull/14862",
-        },
-        {
-          number: "#14850",
-          title: "fix(editor): resolve UX inconsistencies in the AI chat interface",
-          url: "https://github.com/toeverything/AFFiNE/pull/14850",
-        },
-      ],
-    },
-    {
       name: "MUI X",
       repo: "mui/mui-x",
       repoUrl: "https://github.com/mui/mui-x",
@@ -618,6 +565,59 @@ export const DATA = {
           title:
             "[pickers] Use calendar day tokens in AdapterMomentHijri and AdapterMomentJalaali formats",
           url: "https://github.com/mui/mui-x/pull/22974",
+        },
+      ],
+    },
+    {
+      name: "Jenkins",
+      repo: "jenkinsci/jenkins",
+      repoUrl: "https://github.com/jenkinsci/jenkins",
+      prCount: 4,
+      description:
+        "Shipped multiple UI fixes to the world's leading open-source CI/CD automation server, spanning the build parameters dialog, the build-log and console pages, and autocomplete dropdown behavior.",
+      prs: [
+        {
+          number: "#26574",
+          title:
+            "fix: prevent long parameter values from overflowing the parameters dialog",
+          url: "https://github.com/jenkinsci/jenkins/pull/26574",
+        },
+        {
+          number: "#26637",
+          title: "fix: restore cancel button on build log page",
+          url: "https://github.com/jenkinsci/jenkins/pull/26637",
+        },
+        {
+          number: "#26727",
+          title: "Restore job name in run console and changes page titles",
+          url: "https://github.com/jenkinsci/jenkins/pull/26727",
+        },
+        {
+          number: "#26884",
+          title:
+            "Fix combobox and autocomplete dropdown selection beyond the first item",
+          url: "https://github.com/jenkinsci/jenkins/pull/26884",
+        },
+      ],
+    },
+    {
+      name: "AFFiNE",
+      repo: "toeverything/AFFiNE",
+      repoUrl: "https://github.com/toeverything/AFFiNE",
+      prCount: 2,
+      description:
+        "Shipped core editor fixes to this widely-adopted Notion-alternative workspace - aligning selection/drag-handle/cursor overlays with blocks and resolving UX inconsistencies in the AI chat interface.",
+      prs: [
+        {
+          number: "#14862",
+          title:
+            "fix(editor): align selection/handle/remote/text overlays with blocks",
+          url: "https://github.com/toeverything/AFFiNE/pull/14862",
+        },
+        {
+          number: "#14850",
+          title: "fix(editor): resolve UX inconsistencies in the AI chat interface",
+          url: "https://github.com/toeverything/AFFiNE/pull/14850",
         },
       ],
     },
