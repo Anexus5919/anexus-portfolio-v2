@@ -77,7 +77,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const umamiWebsiteId = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID;
+  const umamiWebsiteId =
+    process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID ||
+    "c8a71772-b163-4ab3-8cb0-00c52e91becc";
   const umamiSrc =
     process.env.NEXT_PUBLIC_UMAMI_SRC || "https://cloud.umami.is/script.js";
   return (
@@ -108,7 +110,7 @@ export default function RootLayout({
             <Navbar />
           </TooltipProvider>
         </ThemeProvider>
-        {umamiWebsiteId && (
+        {process.env.NODE_ENV === "production" && umamiWebsiteId && (
           <Script
             src={umamiSrc}
             data-website-id={umamiWebsiteId}
