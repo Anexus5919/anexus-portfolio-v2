@@ -7,6 +7,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
+import Script from "next/script";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -76,6 +77,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const umamiWebsiteId = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID;
+  const umamiSrc =
+    process.env.NEXT_PUBLIC_UMAMI_SRC || "https://cloud.umami.is/script.js";
   return (
     <html lang="en" suppressHydrationWarning>
       <body
@@ -104,6 +108,13 @@ export default function RootLayout({
             <Navbar />
           </TooltipProvider>
         </ThemeProvider>
+        {umamiWebsiteId && (
+          <Script
+            src={umamiSrc}
+            data-website-id={umamiWebsiteId}
+            strategy="afterInteractive"
+          />
+        )}
       </body>
     </html>
   );
