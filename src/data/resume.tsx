@@ -153,10 +153,34 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "SWRMS",
+      title: "SRE Incident Triage Environment",
+      type: "OpenEnv AI x Meta Hackathon",
+      href: "https://huggingface.co/spaces/Anexus5919/incident_triage_env",
+      dates: "Apr 2026",
+      active: true,
+      description:
+        "An OpenEnv reinforcement-learning environment where AI agents act as on-call SREs, investigating logs, metrics, and service dependencies to diagnose root causes and remediate production incidents across graded scenarios.",
+      technologies: ["Python", "OpenEnv", "FastAPI", "Docker", "Reinforcement Learning"],
+      links: [
+        {
+          type: "Hugging Face",
+          href: "https://huggingface.co/spaces/Anexus5919/incident_triage_env",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Anexus5919/incident-triage-env",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/openenv.png",
+      video: "",
+    },
+    {
+      title: "Smart Waste Management System",
       type: "BMC Chembur Ward · UN SDG 11",
       href: "https://swrms.vercel.app",
-      dates: "",
+      dates: "Apr 2026",
       active: true,
       description:
         "Tech-driven municipal waste collection system with geo-fenced attendance, AI face recognition, live route tracking, and tamper-evident audit logs.",
@@ -177,10 +201,10 @@ export const DATA = {
       video: "",
     },
     {
-      title: "OnBoardIQ",
+      title: "AI Developer Onboarding",
       type: "Syrus 2026",
       href: "https://onboardiq-web.vercel.app",
-      dates: "",
+      dates: "Mar 2026",
       active: true,
       description:
         "AI-powered onboarding platform guiding developers through role-specific checklists using conversational AI, RAG-based retrieval, and real-time tracking.",
@@ -201,10 +225,10 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Omnicare - Recovery Companion",
+      title: "Post-Surgical Recovery Platform",
       type: "Nakshatra",
       href: "https://omnicare-olive.vercel.app",
-      dates: "",
+      dates: "Mar 2026",
       active: true,
       description:
         "A comprehensive HealthTech platform for patients, doctors, and caregivers to monitor and manage post-surgical recovery collaboratively.",
@@ -228,7 +252,7 @@ export const DATA = {
       title: "KYC Liveness Detection",
       type: "GENESIS 2026",
       href: "https://kyc-seven-kappa.vercel.app",
-      dates: "",
+      dates: "Feb 2026 - Mar 2026",
       active: true,
       description:
         "A fraud-proof KYC system that ensures unique customer identities through liveness detection and facial deduplication.",
@@ -273,10 +297,10 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Player Profile System",
+      title: "Athlete Profile Platform",
       type: "Internship Project",
       href: "https://player-profile-system.vercel.app",
-      dates: "",
+      dates: "Dec 2025 - Jan 2026",
       active: true,
       description:
         "Web app for athletes to create and showcase professional sports profiles with stats, achievements, and media.",
@@ -297,7 +321,7 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Foodie - Food Delivery App",
+      title: "AI Food Delivery Platform",
       type: "StackHack 3.0",
       href: "https://foodie-three-sigma.vercel.app",
       dates: "Nov 2025 - Dec 2025",
@@ -321,7 +345,7 @@ export const DATA = {
       video: "",
     },
     {
-      title: "RoamIQ - Trip Planner",
+      title: "AI Travel Itinerary Planner",
       type: "Gradguide Internship",
       href: "https://roam-iq.vercel.app",
       dates: "Oct 2025 - Nov 2025",
@@ -345,34 +369,10 @@ export const DATA = {
       video: "",
     },
     {
-      title: "EduSchedulAI",
-      type: "Smart India Hackathon 2025",
-      href: "https://sihvesit.vercel.app",
-      dates: "Sep 2025 - Oct 2025",
-      active: true,
-      description:
-        "Smart academic scheduling aligned with NEP 2020 guidelines, featuring conflict-free schedule generation.",
-      technologies: ["Next.js 15", "MongoDB", "JWT", "jsPDF"],
-      links: [
-        {
-          type: "Website",
-          href: "https://sihvesit.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Anexus5919/SIH_Prototype",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/eduschedule.webp",
-      video: "",
-    },
-    {
       title: "Aimlabs - 3D Aim Trainer",
       type: "Personal Project",
       href: "https://aimlabs-puce.vercel.app",
-      dates: "",
+      dates: "Oct 2025",
       active: true,
       description:
         "Web-based aim trainer with Three.js featuring multiple difficulty levels and performance tracking.",
@@ -390,49 +390,6 @@ export const DATA = {
         },
       ],
       image: "/aimlabs.webp",
-      video: "",
-    },
-    {
-      title: "Customizable 3D Cube",
-      type: "Personal Project",
-      href: "https://customizable-cube.vercel.app",
-      dates: "",
-      active: true,
-      description:
-        "Interactive 3D graphics with real-time customization via lil-gui debug panel and GSAP animations.",
-      technologies: ["Three.js", "WebGL", "GSAP", "lil-gui"],
-      links: [
-        {
-          type: "Website",
-          href: "https://customizable-cube.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Anexus5919/Customizable-cube",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/customizable_cube.webp",
-      video: "",
-    },
-    {
-      title: "Student Management System",
-      type: "Personal Project",
-      href: "https://github.com/Anexus5919/Student_Management_System",
-      dates: "",
-      active: false,
-      description:
-        "Desktop app for managing student records with authentication, analytics, and report generation.",
-      technologies: ["Python", "Tkinter", "SQL"],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/Anexus5919/Student_Management_System",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/student_management_system.webp",
       video: "",
     },
   ],
