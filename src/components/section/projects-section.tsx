@@ -33,7 +33,10 @@ export default async function ProjectsSection() {
                         </p>
                     </div>
                 </div>
-                <ProjectsReveal initial={4}>
+                <ProjectsReveal
+                    initial={4}
+                    githubUrl={`${content.contact.social.GitHub.url}?tab=repositories`}
+                >
                     {content.projects.map((project, id) => (
                         <BlurFade
                             key={project.title}
