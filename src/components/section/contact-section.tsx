@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FlickeringGrid } from "@/components/magicui/flickering-grid";
+import { WaveGrid } from "@/components/magicui/wave-grid";
 import { ContactForm } from "@/components/contact-form";
 import { getContent } from "@/lib/content";
 
@@ -11,7 +11,7 @@ export default async function ContactSection() {
         <span className="text-background text-sm font-medium">Contact</span>
       </div>
       <div className="absolute inset-0 top-0 left-0 right-0 h-1/2 rounded-xl overflow-hidden">
-        <FlickeringGrid
+        <WaveGrid
           className="h-full w-full"
           squareSize={2}
           gridGap={2}
