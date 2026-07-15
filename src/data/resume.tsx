@@ -153,102 +153,6 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "SRE Incident Triage Environment",
-      type: "OpenEnv AI x Meta Hackathon",
-      href: "https://huggingface.co/spaces/Anexus5919/incident_triage_env",
-      dates: "Apr 2026",
-      active: true,
-      description:
-        "An OpenEnv reinforcement-learning environment where AI agents act as on-call SREs, investigating logs, metrics, and service dependencies to diagnose root causes and remediate production incidents across graded scenarios.",
-      technologies: ["Python", "OpenEnv", "FastAPI", "Docker", "Reinforcement Learning"],
-      links: [
-        {
-          type: "Hugging Face",
-          href: "https://huggingface.co/spaces/Anexus5919/incident_triage_env",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Anexus5919/incident-triage-env",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/openenv.png",
-      video: "",
-    },
-    {
-      title: "Smart Waste Management System",
-      type: "BMC Chembur Ward · UN SDG 11",
-      href: "https://swrms.vercel.app",
-      dates: "Apr 2026",
-      active: true,
-      description:
-        "Tech-driven municipal waste collection system with geo-fenced attendance, AI face recognition, live route tracking, and tamper-evident audit logs.",
-      technologies: ["Next.js 16", "face-api.js", "Leaflet", "MongoDB", "OSRM"],
-      links: [
-        {
-          type: "Website",
-          href: "https://swrms.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Anexus5919/SWRMS",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/swrms.webp",
-      video: "",
-    },
-    {
-      title: "AI Developer Onboarding",
-      type: "Syrus 2026",
-      href: "https://onboardiq-web.vercel.app",
-      dates: "Mar 2026",
-      active: true,
-      description:
-        "AI-powered onboarding platform guiding developers through role-specific checklists using conversational AI, RAG-based retrieval, and real-time tracking.",
-      technologies: ["Next.js 14", "Fastify", "Groq AI", "PostgreSQL", "Prisma"],
-      links: [
-        {
-          type: "Website",
-          href: "https://onboardiq-web.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Anexus5919/OnBoardIQ",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/onboardiq.webp",
-      video: "",
-    },
-    {
-      title: "Post-Surgical Recovery Platform",
-      type: "Nakshatra",
-      href: "https://omnicare-olive.vercel.app",
-      dates: "Mar 2026",
-      active: true,
-      description:
-        "A comprehensive HealthTech platform for patients, doctors, and caregivers to monitor and manage post-surgical recovery collaboratively.",
-      technologies: ["Next.js 16", "React", "Recharts", "Framer Motion", "Tailwind v4"],
-      links: [
-        {
-          type: "Website",
-          href: "https://omnicare-olive.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Anexus5919/OmniCare",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/omnicare.webp",
-      video: "",
-    },
-    {
       title: "KYC Liveness Detection",
       type: "GENESIS 2026",
       href: "https://kyc-seven-kappa.vercel.app",
@@ -297,51 +201,51 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Athlete Profile Platform",
-      type: "Internship Project",
-      href: "https://player-profile-system.vercel.app",
-      dates: "Dec 2025 - Jan 2026",
+      title: "Smart Waste Management System",
+      type: "BMC Chembur Ward · UN SDG 11",
+      href: "https://swrms.vercel.app",
+      dates: "Apr 2026",
       active: true,
       description:
-        "Web app for athletes to create and showcase professional sports profiles with stats, achievements, and media.",
-      technologies: ["Next.js 16", "MongoDB", "React", "Cloudinary"],
+        "Tech-driven municipal waste collection system with geo-fenced attendance, AI face recognition, live route tracking, and tamper-evident audit logs.",
+      technologies: ["Next.js 16", "face-api.js", "Leaflet", "MongoDB", "OSRM"],
       links: [
         {
           type: "Website",
-          href: "https://player-profile-system.vercel.app",
+          href: "https://swrms.vercel.app",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/Anexus5919/player-profile-system",
+          href: "https://github.com/Anexus5919/SWRMS",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/player_profile.webp",
+      image: "/swrms.webp",
       video: "",
     },
     {
-      title: "AI Food Delivery Platform",
-      type: "StackHack 3.0",
-      href: "https://foodie-three-sigma.vercel.app",
-      dates: "Nov 2025 - Dec 2025",
+      title: "SRE Incident Triage Environment",
+      type: "OpenEnv AI x Meta Hackathon",
+      href: "https://huggingface.co/spaces/Anexus5919/incident_triage_env",
+      dates: "Apr 2026",
       active: true,
       description:
-        "End-to-end food ordering with AI-assisted ordering and real-time tracking across multiple states.",
-      technologies: ["Next.js 15", "AI Integration", "Real-time Tracking"],
+        "An OpenEnv reinforcement-learning environment where AI agents act as on-call SREs, investigating logs, metrics, and service dependencies to diagnose root causes and remediate production incidents across graded scenarios.",
+      technologies: ["Python", "OpenEnv", "FastAPI", "Docker", "Reinforcement Learning"],
       links: [
         {
-          type: "Website",
-          href: "https://foodie-three-sigma.vercel.app",
+          type: "Hugging Face",
+          href: "https://huggingface.co/spaces/Anexus5919/incident_triage_env",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/Anexus5919/foodie",
+          href: "https://github.com/Anexus5919/incident-triage-env",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/foodie.webp",
+      image: "/openenv.png",
       video: "",
     },
     {
@@ -369,6 +273,30 @@ export const DATA = {
       video: "",
     },
     {
+      title: "AI Developer Onboarding",
+      type: "Syrus 2026",
+      href: "https://onboardiq-web.vercel.app",
+      dates: "Mar 2026",
+      active: true,
+      description:
+        "AI-powered onboarding platform guiding developers through role-specific checklists using conversational AI, RAG-based retrieval, and real-time tracking.",
+      technologies: ["Next.js 14", "Fastify", "Groq AI", "PostgreSQL", "Prisma"],
+      links: [
+        {
+          type: "Website",
+          href: "https://onboardiq-web.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Anexus5919/OnBoardIQ",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/onboardiq.webp",
+      video: "",
+    },
+    {
       title: "Aimlabs - 3D Aim Trainer",
       type: "Personal Project",
       href: "https://aimlabs-puce.vercel.app",
@@ -390,6 +318,78 @@ export const DATA = {
         },
       ],
       image: "/aimlabs.webp",
+      video: "",
+    },
+    {
+      title: "Post-Surgical Recovery Platform",
+      type: "Nakshatra",
+      href: "https://omnicare-olive.vercel.app",
+      dates: "Mar 2026",
+      active: true,
+      description:
+        "A comprehensive HealthTech platform for patients, doctors, and caregivers to monitor and manage post-surgical recovery collaboratively.",
+      technologies: ["Next.js 16", "React", "Recharts", "Framer Motion", "Tailwind v4"],
+      links: [
+        {
+          type: "Website",
+          href: "https://omnicare-olive.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Anexus5919/OmniCare",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/omnicare.webp",
+      video: "",
+    },
+    {
+      title: "AI Food Delivery Platform",
+      type: "StackHack 3.0",
+      href: "https://foodie-three-sigma.vercel.app",
+      dates: "Nov 2025 - Dec 2025",
+      active: true,
+      description:
+        "End-to-end food ordering with AI-assisted ordering and real-time tracking across multiple states.",
+      technologies: ["Next.js 15", "AI Integration", "Real-time Tracking"],
+      links: [
+        {
+          type: "Website",
+          href: "https://foodie-three-sigma.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Anexus5919/foodie",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/foodie.webp",
+      video: "",
+    },
+    {
+      title: "Athlete Profile Platform",
+      type: "Internship Project",
+      href: "https://player-profile-system.vercel.app",
+      dates: "Dec 2025 - Jan 2026",
+      active: true,
+      description:
+        "Web app for athletes to create and showcase professional sports profiles with stats, achievements, and media.",
+      technologies: ["Next.js 16", "MongoDB", "React", "Cloudinary"],
+      links: [
+        {
+          type: "Website",
+          href: "https://player-profile-system.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Anexus5919/player-profile-system",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/player_profile.webp",
       video: "",
     },
   ],
