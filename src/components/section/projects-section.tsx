@@ -1,5 +1,6 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import { ProjectCard } from "@/components/project-card";
+import { ProjectsReveal } from "@/components/projects-reveal";
 import { getContent } from "@/lib/content";
 
 const BLUR_FADE_DELAY = 0.04;
@@ -32,7 +33,7 @@ export default async function ProjectsSection() {
                         </p>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto auto-rows-fr">
+                <ProjectsReveal initial={4}>
                     {content.projects.map((project, id) => (
                         <BlurFade
                             key={project.title}
@@ -52,7 +53,7 @@ export default async function ProjectsSection() {
                             />
                         </BlurFade>
                     ))}
-                </div>
+                </ProjectsReveal>
             </div>
         </section>
     );
