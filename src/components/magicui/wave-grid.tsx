@@ -189,6 +189,9 @@ export const WaveGrid: React.FC<WaveGridProps> = ({
 
     const resizeObserver = new ResizeObserver(() => {
       updateCanvasSize()
+      if (reducedMotion && isInView) {
+        animationFrameId = requestAnimationFrame(animate)
+      }
     })
 
     resizeObserver.observe(container)
