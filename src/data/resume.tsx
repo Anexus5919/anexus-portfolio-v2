@@ -393,6 +393,40 @@ export const DATA = {
       video: "",
     },
   ],
+  writing: [
+    {
+      title: "Surviving Myself",
+      kicker: "Psychological Horror",
+      description:
+        "My first published book. More than a horror story, I wanted an immersive experience where every chapter uncovers a little more of its meaning. It grew out of my interest in psychological storytelling, layered narratives, and stories that linger long after the last page.",
+      publisher: "Self-published",
+      date: "May 2026",
+      isbn: "979-8198919655",
+      cover: "/book-cover.webp",
+      links: [
+        {
+          label: "Read it on Pothi (India)",
+          href: "https://store.pothi.com/book/adarsh-singh-surviving-myself/",
+        },
+      ],
+      amazon: [
+        { country: "United States", href: "https://a.co/d/0b3IM5Gy" },
+        { country: "United Kingdom", href: "https://amzn.eu/d/03qHkEs1" },
+        { country: "Germany", href: "https://amzn.eu/d/07sjrPi3" },
+        { country: "France", href: "https://amzn.eu/d/0dkpvOXX" },
+        { country: "Spain", href: "https://amzn.eu/d/0hGn5TPt" },
+        { country: "Italy", href: "https://amzn.eu/d/00VSr8ik" },
+        { country: "Netherlands", href: "https://amzn.eu/d/097zcQ7x" },
+        { country: "Poland", href: "https://amzn.eu/d/0eMo2aOq" },
+        { country: "Sweden", href: "https://amzn.eu/d/0ji9ZfyN" },
+        { country: "Belgium", href: "https://amzn.eu/d/06lPc4CM" },
+        { country: "Ireland", href: "https://amzn.eu/d/06imvIT6" },
+        { country: "Japan", href: "https://amzn.asia/d/0547zHQN" },
+        { country: "Canada", href: "https://a.co/d/04M5X7Qp" },
+        { country: "Australia", href: "https://amzn.asia/d/00kXnxyZ" },
+      ],
+    },
+  ],
   openSource: [
     {
       name: "MUI X",
@@ -558,6 +592,68 @@ export const DATA = {
       ],
     },
     {
+      name: "Accord Project",
+      repo: "accordproject/template-playground",
+      repoUrl: "https://github.com/accordproject/template-playground",
+      prCount: 3,
+      description:
+        "Resolved ESLint errors across the codebase, fixed a UI layout overflow, and added a confirmation modal before loading sample templates.",
+      prs: [
+        {
+          number: "#440",
+          title: "chore(lint): resolve ESLint errors and warnings across codebase",
+          url: "https://github.com/accordproject/template-playground/pull/440",
+        },
+        {
+          number: "#433",
+          title: "fix(ui): constrain learn layout height to prevent overflow",
+          url: "https://github.com/accordproject/template-playground/pull/433",
+        },
+        {
+          number: "#868",
+          title:
+            "feat(ux): add confirmation modal before loading sample template",
+          url: "https://github.com/accordproject/template-playground/pull/868",
+        },
+      ],
+    },
+    {
+      name: "Frappe LMS",
+      repo: "frappe/lms",
+      repoUrl: "https://github.com/frappe/lms",
+      prCount: 2,
+      description:
+        "Fixed critical UI and state management issues in Frappe's open-source learning management system, improving lesson reindexing after deletion and resolving sidebar overlap bugs.",
+      prs: [
+        {
+          number: "#2018",
+          title: "fix: reindex lessons after deletion to prevent stale form state",
+          url: "https://github.com/frappe/lms/pull/2018",
+        },
+        {
+          number: "#2017",
+          title: "fix: instructor notes block settings menu overlapped by sidebar",
+          url: "https://github.com/frappe/lms/pull/2017",
+        },
+      ],
+    },
+    {
+      name: "AsyncAPI",
+      repo: "asyncapi/website",
+      repoUrl: "https://github.com/asyncapi/website",
+      prCount: 1,
+      description:
+        "Shipped a fix to the official website of the Linux Foundation-backed event-driven API specification, restricting YouTube embed recommendations to AsyncAPI's own channel.",
+      prs: [
+        {
+          number: "#5309",
+          title:
+            "fix: restrict YouTube embed recommendations to AsyncAPI channel on roadmap page",
+          url: "https://github.com/asyncapi/website/pull/5309",
+        },
+      ],
+    },
+    {
       name: "AFFiNE",
       repo: "toeverything/AFFiNE",
       repoUrl: "https://github.com/toeverything/AFFiNE",
@@ -600,22 +696,6 @@ export const DATA = {
       ],
     },
     {
-      name: "AsyncAPI",
-      repo: "asyncapi/website",
-      repoUrl: "https://github.com/asyncapi/website",
-      prCount: 1,
-      description:
-        "Shipped a fix to the official website of the Linux Foundation-backed event-driven API specification, restricting YouTube embed recommendations to AsyncAPI's own channel.",
-      prs: [
-        {
-          number: "#5309",
-          title:
-            "fix: restrict YouTube embed recommendations to AsyncAPI channel on roadmap page",
-          url: "https://github.com/asyncapi/website/pull/5309",
-        },
-      ],
-    },
-    {
       name: "Music Blocks",
       repo: "sugarlabs/musicblocks",
       repoUrl: "https://github.com/sugarlabs/musicblocks",
@@ -632,52 +712,6 @@ export const DATA = {
           number: "#6828",
           title: "chore: remove unused eslint-disable directives",
           url: "https://github.com/sugarlabs/musicblocks/pull/6828",
-        },
-      ],
-    },
-    {
-      name: "Frappe LMS",
-      repo: "frappe/lms",
-      repoUrl: "https://github.com/frappe/lms",
-      prCount: 2,
-      description:
-        "Fixed critical UI and state management issues in Frappe's open-source learning management system, improving lesson reindexing after deletion and resolving sidebar overlap bugs.",
-      prs: [
-        {
-          number: "#2018",
-          title: "fix: reindex lessons after deletion to prevent stale form state",
-          url: "https://github.com/frappe/lms/pull/2018",
-        },
-        {
-          number: "#2017",
-          title: "fix: instructor notes block settings menu overlapped by sidebar",
-          url: "https://github.com/frappe/lms/pull/2017",
-        },
-      ],
-    },
-    {
-      name: "Accord Project",
-      repo: "accordproject/template-playground",
-      repoUrl: "https://github.com/accordproject/template-playground",
-      prCount: 3,
-      description:
-        "Resolved ESLint errors across the codebase, fixed a UI layout overflow, and added a confirmation modal before loading sample templates.",
-      prs: [
-        {
-          number: "#440",
-          title: "chore(lint): resolve ESLint errors and warnings across codebase",
-          url: "https://github.com/accordproject/template-playground/pull/440",
-        },
-        {
-          number: "#433",
-          title: "fix(ui): constrain learn layout height to prevent overflow",
-          url: "https://github.com/accordproject/template-playground/pull/433",
-        },
-        {
-          number: "#868",
-          title:
-            "feat(ux): add confirmation modal before loading sample template",
-          url: "https://github.com/accordproject/template-playground/pull/868",
         },
       ],
     },
@@ -701,5 +735,5 @@ export const DATA = {
         },
       ],
     },
-  ],
+],
 } as const;
