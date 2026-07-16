@@ -32,8 +32,8 @@ export default async function BookSection() {
               decoding="async"
               className="h-auto w-32 shrink-0 self-start rounded-[2px] shadow-lg shadow-black/30 ring-1 ring-black/5 dark:ring-white/10 sm:w-44"
             />
-            <div className="flex min-w-0 flex-col gap-y-3">
-              <div className="flex flex-col gap-y-1.5">
+            <div className="flex min-w-0 flex-col gap-y-5">
+              <div className="flex flex-col gap-y-2">
                 <h3 className="text-lg font-semibold tracking-tight">
                   {book.title}
                 </h3>

@@ -16,7 +16,7 @@ export function BookLinks({
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex flex-col gap-y-4 pt-1">
+    <div className="flex flex-col gap-y-4 pt-2">
       <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
         {links.map((link) => (
           <a
