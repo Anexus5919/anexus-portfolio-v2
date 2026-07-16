@@ -158,6 +158,7 @@ export const getContent = cache(async (): Promise<Content> => {
           video: pr.video ?? "",
         };
       }),
+      writing: DATA.writing,
       openSource: osSnap.docs.map((d) => {
         const o = d.data();
         return {
