@@ -3,6 +3,7 @@ import Link from "next/link";
 import { GitMerge, GitPullRequest } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import BlurFade from "@/components/magicui/blur-fade";
+import { RevealList } from "@/components/reveal-list";
 import { getContent } from "@/lib/content";
 
 const BLUR_FADE_DELAY = 0.04;
@@ -41,21 +42,22 @@ export default async function OpenSourceSection() {
           </div>
         </div>
 
-        <ol className="relative flex flex-col list-none p-0 m-0 max-w-[640px] w-full mx-auto">
+        <RevealList
+          as="ol"
+          initial={4}
+          className="relative flex flex-col list-none p-0 m-0 max-w-[640px] w-full mx-auto"
+        >
           {projects.map((project, id) => {
             const org = project.repo.split("/")[0];
-            const isLast = id === projects.length - 1;
             return (
               <li
                 key={project.repo}
-                className="relative flex gap-x-4 sm:gap-x-5 pb-8 last:pb-0"
+                className="group/org relative flex gap-x-4 sm:gap-x-5 pb-8 last:pb-0"
               >
-                {!isLast && (
-                  <span
-                    aria-hidden
-                    className="absolute left-5 top-11 bottom-0 w-px bg-border"
-                  />
-                )}
+                <span
+                  aria-hidden
+                  className="absolute left-5 top-11 bottom-0 w-px bg-border group-last/org:hidden"
+                />
                 <BlurFade
                   delay={BLUR_FADE_DELAY * 12 + id * 0.05}
                   className="relative z-10 shrink-0"
@@ -112,7 +114,7 @@ export default async function OpenSourceSection() {
               </li>
             );
           })}
-        </ol>
+        </RevealList>
 
         <Badge
           variant="outline"
