@@ -198,7 +198,7 @@ export default async function Page() {
           <OpenSourceSection />
         </BlurFade>
       </section>
-      <section id="beyond-code">
+      <section id="beyond-code" className="pb-4">
         <BlurFade delay={BLUR_FADE_DELAY * 14}>
           <BookSection />
         </BlurFade>
