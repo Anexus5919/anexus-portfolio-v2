@@ -398,7 +398,7 @@ export const DATA = {
       title: "Surviving Myself",
       kicker: "Psychological Horror",
       description:
-        "My first published book. More than a horror story, I wanted an immersive experience where every chapter uncovers a little more of its meaning. It grew out of my interest in psychological storytelling, layered narratives, and stories that linger long after the last page.",
+        "My first published book. More than a horror story, it is an immersive experience where every chapter uncovers a little more of its meaning. It grew out of my interest in psychological storytelling, layered narratives, and stories that linger long after the final page.",
       publisher: "Self-published",
       date: "May 2026",
       isbn: "979-8198919655",
