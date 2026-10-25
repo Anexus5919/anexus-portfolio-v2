@@ -14,6 +14,7 @@ import {
   Code2,
   Database,
   Palette,
+  Play,
   Wrench,
   type LucideIcon,
 } from "lucide-react";
@@ -52,7 +53,11 @@ const SOCIAL_ICONS: Record<string, IconComponent> = {
 const skillIcon = (name: string): LucideIcon => SKILL_ICONS[name] ?? Code2;
 const socialIcon = (name: string): IconComponent => SOCIAL_ICONS[name] ?? Icons.globe;
 const linkIcon = (type: string): ReactNode => {
-  const I = /source|github|code/i.test(type) ? Icons.github : Icons.globe;
+  const I = /video|demo/i.test(type)
+    ? Play
+    : /source|github|code/i.test(type)
+      ? Icons.github
+      : Icons.globe;
   return <I className="size-3" />;
 };
 

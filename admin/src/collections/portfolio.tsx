@@ -184,7 +184,7 @@ export const projectsCollection = buildCollection({
           type: {
             name: "Type",
             dataType: "string",
-            enumValues: { Website: "Website", Source: "Source" },
+            enumValues: { Website: "Website", Source: "Source", "Demo Video": "Demo Video" },
           },
           href: { name: "URL", dataType: "string", url: true },
         },
