@@ -7,6 +7,7 @@ import {
   Palette,
   Wrench,
   Cloud,
+  Play,
 } from "lucide-react";
 
 export const DATA = {
@@ -153,27 +154,215 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "KYC Liveness Detection",
-      type: "GENESIS 2026",
-      href: "https://kyc-seven-kappa.vercel.app",
-      dates: "Feb 2026 - Mar 2026",
+      title: "PDF Forensics & Compliance Engine (Pramana)",
+      type: "Smart India Hackathon 2026",
+      href: "https://drive.google.com/file/d/1EWt5FSUE9omqn0tEgNDzp0GsQ5wujE_l/view",
+      dates: "Oct 2026",
       active: true,
       description:
-        "A fraud-proof KYC system that ensures unique customer identities through liveness detection and facial deduplication.",
-      technologies: ["Next.js", "Liveness Detection", "Face Recognition", "KYC"],
+        "Decision-support platform that validates AICTE approval applications against 29 cited handbook rules, reads documents with OCR (including Devanagari), verifies PDF signatures against CCA India root certificates and detects tampering such as edited revisions, overlaid text and reused seals; 54 of 54 planted problems caught with 0 false alarms.",
+      technologies: ["Python", "FastAPI", "React", "pyHanko", "RapidOCR", "Ollama"],
+      links: [
+        {
+          type: "Demo Video",
+          href: "https://drive.google.com/file/d/1EWt5FSUE9omqn0tEgNDzp0GsQ5wujE_l/view",
+          icon: <Play className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Anexus5919/pramana",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/pramana.webp",
+      video: "",
+    },
+    {
+      title: "Laya System-1 Model Game Agent (CodeYatri)",
+      type: "Genesis 2.0 · Winner (1st Place)",
+      href: "https://drive.google.com/file/d/1UMB7RkfHeGB_brMDGqnlsZtpY0VC-a4_/view",
+      dates: "Oct 2026",
+      active: true,
+      description:
+        "Game agent driven by Laya, a System-1 open-weight decision model, playing Snake, 2048 and Doom: Python turns live game state into one-move facts, asks Laya one yes/no question per legal action in a single forward pass and plays the highest normalised P(true), with every decision hash-chained and fsynced before the move is sent; full-model fine-tuning on Kaggle T4 GPUs raised 2048 runs reaching 512 from 0% to 79% (held-out agreement 0.49 to 0.93) and cleared Doom's deadly corridor 3 of 3 in ViZDoom.",
+      technologies: ["Python", "PyTorch", "ViZDoom", "Hugging Face"],
+      links: [
+        {
+          type: "Demo Video",
+          href: "https://drive.google.com/file/d/1UMB7RkfHeGB_brMDGqnlsZtpY0VC-a4_/view",
+          icon: <Play className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Anexus5919/codeyatri-laya",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/codeyatri.webp",
+      video: "",
+    },
+    {
+      title: "Zero-Trust Trading Copilot (Countersign)",
+      type: "SYRUS 7.0 · Runner-up (2nd Place)",
+      href: "https://drive.google.com/file/d/1QxKDCzzJGd8C6PcHabohDKIzxevq2O4d/view",
+      dates: "Oct 2026",
+      active: true,
+      description:
+        "Trading copilot that treats the language model as an untrusted translator with no credentials: every proposed order is verified deterministically and countersigned with a WebAuthn passkey before an isolated executor, the only holder of the broker key, places it at most once; 0 unapproved trades across 9 Attack Lab scenarios.",
+      technologies: ["Next.js", "FastAPI", "DBOS", "PostgreSQL", "Valkey", "TLA+"],
+      links: [
+        {
+          type: "Demo Video",
+          href: "https://drive.google.com/file/d/1QxKDCzzJGd8C6PcHabohDKIzxevq2O4d/view",
+          icon: <Play className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/CMPN-CODECELL/Syrus7_CodeYodha",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/countersign.webp",
+      video: "",
+    },
+    {
+      title: "Geo-Clustered Itinerary Planner (RoamIQ)",
+      type: "SerpApi India Hackathon 2026",
+      href: "https://roam-iq.vercel.app",
+      dates: "Sep 2026",
+      active: true,
+      description:
+        "Itinerary planner that turns live SerpApi flight, hotel, place and news data into day-by-day plans; stops are clustered into compact days with a capacitated greedy pass and ordered by nearest-neighbour routing over Haversine distances before the model writes only the narrative, and plans are drag-editable and shared by QR code with no database.",
+      technologies: ["Next.js", "React", "Tailwind CSS", "SerpApi", "Groq"],
       links: [
         {
           type: "Website",
-          href: "https://kyc-seven-kappa.vercel.app",
+          href: "https://roam-iq.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Demo Video",
+          href: "https://drive.google.com/file/d/1vTDYpX7oOSzPXmiDxI5e6PeUKy-rtvnW/view",
+          icon: <Play className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Anexus5919/RoamIQ",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/roamiq.webp",
+      video: "",
+    },
+    {
+      title: "Multi-Agent RAG Onboarding Platform (OnBoardIQ)",
+      type: "Syrus 2026 Hackathon",
+      href: "https://onboardiq-web.vercel.app",
+      dates: "Mar 2026",
+      active: true,
+      description:
+        "Onboarding platform where specialised agents generate role-specific checklists, answer questions by RAG over pgvector embeddings and automate GitHub, Slack and Jira tasks, with a VS Code extension that detects the project stack, verifies the local environment and streams responses over Socket.io.",
+      technologies: [
+        "Next.js",
+        "Fastify",
+        "Prisma",
+        "PostgreSQL (pgvector)",
+        "Redis (BullMQ)",
+        "Groq",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://onboardiq-web.vercel.app",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/Anexus5919/fraud-proof-kyc",
+          href: "https://github.com/Anexus5919/OnBoardIQ",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/fraudproof-kyc.webp",
+      image: "/onboardiq.webp",
+      video: "",
+    },
+    {
+      title: "Code-Graph Wiki Engine (EveryRepo)",
+      type: "Personal Project",
+      href: "https://everyrepo.me",
+      dates: "Sep 2026",
+      active: true,
+      description:
+        "Codebase explainer for any public GitHub repository: parses code with tree-sitter, ranks files on the import graph with PageRank and generates a wiki in which every paragraph cites commit-pinned source lines, with an Ask box over hybrid FTS5 and vector search and contribution guidance from real repository activity.",
+      technologies: ["TypeScript", "Astro", "SQLite", "Drizzle", "Cloudflare Workers AI"],
+      links: [
+        {
+          type: "Website",
+          href: "https://everyrepo.me",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Anexus5919/everyrepo",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/everyrepo.webp",
+      video: "",
+    },
+    {
+      title: "Geofenced Workforce Tracking PWA (SWRMS)",
+      type: "BMC Chembur Ward · UN SDG 11",
+      href: "https://swrms.vercel.app",
+      dates: "Apr 2026",
+      active: true,
+      description:
+        "Workforce and route platform for the BMC Solid Waste Management department: geo-fenced attendance with mock-GPS rejection, face verification on 128-dimensional embeddings, live tracking with route-deviation and idle alerts over Server-Sent Events and Web Push, automated reallocation and a tamper-evident audit log, in a multilingual offline-first PWA.",
+      technologies: ["Next.js 16", "MongoDB", "face-api.js", "OSRM", "Leaflet"],
+      links: [
+        {
+          type: "Website",
+          href: "https://swrms.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Anexus5919/SWRMS",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/swrms.webp",
+      video: "",
+    },
+    {
+      title: "MapLibre Live-Tracking Delivery Platform (Foodie)",
+      type: "GradGuide Freelance Project",
+      href: "https://foodie-three-sigma.vercel.app",
+      dates: "Nov 2025 - Dec 2025",
+      active: true,
+      description:
+        "Food delivery platform with restaurant discovery and filters, real-time search, cart and coupon checkout, simulated live order tracking on a MapLibre map, Firebase Google Sign-In and a Gemini-powered assistant for food and diet questions.",
+      technologies: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "TanStack Query",
+        "Firebase",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://foodie-three-sigma.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Anexus5919/foodie",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/foodie.webp",
       video: "",
     },
     {
@@ -201,30 +390,6 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Smart Waste Management System",
-      type: "BMC Chembur Ward · UN SDG 11",
-      href: "https://swrms.vercel.app",
-      dates: "Apr 2026",
-      active: true,
-      description:
-        "Tech-driven municipal waste collection system with geo-fenced attendance, AI face recognition, live route tracking, and tamper-evident audit logs.",
-      technologies: ["Next.js 16", "face-api.js", "Leaflet", "MongoDB", "OSRM"],
-      links: [
-        {
-          type: "Website",
-          href: "https://swrms.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Anexus5919/SWRMS",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/swrms.webp",
-      video: "",
-    },
-    {
       title: "SRE Incident Triage Environment",
       type: "OpenEnv AI x Meta Hackathon",
       href: "https://huggingface.co/spaces/Anexus5919/incident_triage_env",
@@ -246,150 +411,6 @@ export const DATA = {
         },
       ],
       image: "/openenv.png",
-      video: "",
-    },
-    {
-      title: "AI Travel Itinerary Planner",
-      type: "Gradguide Internship",
-      href: "https://roam-iq.vercel.app",
-      dates: "Oct 2025 - Nov 2025",
-      active: true,
-      description:
-        "Intelligent travel itinerary generator with 100% real locations using local Llama 3 models.",
-      technologies: ["Next.js 15", "Llama 3", "TomTom API", "SerpAPI"],
-      links: [
-        {
-          type: "Website",
-          href: "https://roam-iq.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Anexus5919/RoamIQ",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/roamiq.webp",
-      video: "",
-    },
-    {
-      title: "AI Developer Onboarding",
-      type: "Syrus 2026",
-      href: "https://onboardiq-web.vercel.app",
-      dates: "Mar 2026",
-      active: true,
-      description:
-        "AI-powered onboarding platform guiding developers through role-specific checklists using conversational AI, RAG-based retrieval, and real-time tracking.",
-      technologies: ["Next.js 14", "Fastify", "Groq AI", "PostgreSQL", "Prisma"],
-      links: [
-        {
-          type: "Website",
-          href: "https://onboardiq-web.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Anexus5919/OnBoardIQ",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/onboardiq.webp",
-      video: "",
-    },
-    {
-      title: "Aimlabs - 3D Aim Trainer",
-      type: "Personal Project",
-      href: "https://aimlabs-puce.vercel.app",
-      dates: "Oct 2025",
-      active: true,
-      description:
-        "Web-based aim trainer with Three.js featuring multiple difficulty levels and performance tracking.",
-      technologies: ["Three.js", "WebGL", "Raycaster", "Vite"],
-      links: [
-        {
-          type: "Website",
-          href: "https://aimlabs-puce.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Anexus5919/Aimlabs",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/aimlabs.webp",
-      video: "",
-    },
-    {
-      title: "Post-Surgical Recovery Platform",
-      type: "Nakshatra",
-      href: "https://omnicare-olive.vercel.app",
-      dates: "Mar 2026",
-      active: true,
-      description:
-        "A comprehensive HealthTech platform for patients, doctors, and caregivers to monitor and manage post-surgical recovery collaboratively.",
-      technologies: ["Next.js 16", "React", "Recharts", "Framer Motion", "Tailwind v4"],
-      links: [
-        {
-          type: "Website",
-          href: "https://omnicare-olive.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Anexus5919/OmniCare",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/omnicare.webp",
-      video: "",
-    },
-    {
-      title: "AI Food Delivery Platform",
-      type: "StackHack 3.0",
-      href: "https://foodie-three-sigma.vercel.app",
-      dates: "Nov 2025 - Dec 2025",
-      active: true,
-      description:
-        "End-to-end food ordering with AI-assisted ordering and real-time tracking across multiple states.",
-      technologies: ["Next.js 15", "AI Integration", "Real-time Tracking"],
-      links: [
-        {
-          type: "Website",
-          href: "https://foodie-three-sigma.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Anexus5919/foodie",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/foodie.webp",
-      video: "",
-    },
-    {
-      title: "Athlete Profile Platform",
-      type: "Internship Project",
-      href: "https://player-profile-system.vercel.app",
-      dates: "Dec 2025 - Jan 2026",
-      active: true,
-      description:
-        "Web app for athletes to create and showcase professional sports profiles with stats, achievements, and media.",
-      technologies: ["Next.js 16", "MongoDB", "React", "Cloudinary"],
-      links: [
-        {
-          type: "Website",
-          href: "https://player-profile-system.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Anexus5919/player-profile-system",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/player_profile.webp",
       video: "",
     },
   ],
