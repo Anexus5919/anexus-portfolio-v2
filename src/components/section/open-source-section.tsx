@@ -44,7 +44,7 @@ export default async function OpenSourceSection() {
 
         <RevealList
           as="ol"
-          initial={4}
+          initial={3}
           className="relative flex flex-col list-none p-0 m-0 max-w-[640px] w-full mx-auto"
         >
           {projects.map((project, id) => {
