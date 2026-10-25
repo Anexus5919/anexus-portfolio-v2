@@ -11,9 +11,9 @@ const BLUR_FADE_DELAY = 0.04;
 export default async function OpenSourceSection() {
   const content = await getContent();
   const projects = content.openSource;
-  const totalPRs = 177;
-  const totalProjects = 15;
-  const totalOrgs = 12;
+  const totalPRs = 287;
+  const totalProjects = 19;
+  const totalOrgs = 16;
 
   return (
     <section id="open-source" className="overflow-hidden">
