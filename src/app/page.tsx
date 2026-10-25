@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { getContent } from "@/lib/content";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import AchievementsSection from "@/components/section/achievements-section";
 import BookSection from "@/components/section/book-section";
 import ContactSection from "@/components/section/contact-section";
 import OpenSourceSection from "@/components/section/open-source-section";
@@ -198,8 +199,13 @@ export default async function Page() {
           <OpenSourceSection />
         </BlurFade>
       </section>
-      <section id="beyond-code" className="pb-4">
+      <section id="achievements">
         <BlurFade delay={BLUR_FADE_DELAY * 14}>
+          <AchievementsSection />
+        </BlurFade>
+      </section>
+      <section id="beyond-code" className="pb-4">
+        <BlurFade delay={BLUR_FADE_DELAY * 15}>
           <BookSection />
         </BlurFade>
       </section>

@@ -861,4 +861,52 @@ export const DATA = {
       ],
     },
 ],
+  // Rendered from static data only (like `writing`); not stored in Firestore.
+  // `kind` picks the icon: winner | runner-up | finalist | rank.
+  achievements: [
+    {
+      title: "JPMorgan Chase Code for Good 2026",
+      result: "Finalist",
+      kind: "finalist",
+      logoUrl: "/logos/jpmorganchase.png",
+      description:
+        "Selected as a finalist in JPMorgan Chase's social-impact hackathon. Worked on the problem statement of partner organization ISRA, designing and building the technology solution best suited to their needs.",
+      technologies: [],
+      repo: "",
+      repoUrl: "",
+    },
+    {
+      title: "Genesis 2.0, 2026",
+      result: "Winner · 1st Place",
+      kind: "winner",
+      logoUrl: "/logos/questit.png",
+      description:
+        "Led a 4-member team building CodeYatri, where the open-weight Laya model makes every Snake, 2048 and Doom move via logged yes/no queries. Fine-tuning lifted 2048 runs reaching 512 from 0% to 79%.",
+      technologies: ["Python", "PyTorch"],
+      repo: "Anexus5919/codeyatri-laya",
+      repoUrl: "https://github.com/Anexus5919/codeyatri-laya",
+    },
+    {
+      title: "Amazon ML Challenge 2026",
+      result: "Rank 570",
+      kind: "rank",
+      logoUrl: "/logos/amazon.png",
+      description:
+        "Achieved an overall rank of 570 with a 0.98 macro-F0.5 score matching business records across data sources, using TF-IDF and dense e5 retrieval, LightGBM ranking and fine-tuned e5/mDeBERTa cross-encoders.",
+      technologies: ["Python", "LightGBM", "e5", "mDeBERTa"],
+      repo: "Anexus5919/psychiclearn-amazon-ml-2026",
+      repoUrl: "https://github.com/Anexus5919/psychiclearn-amazon-ml-2026",
+    },
+    {
+      title: "SYRUS 7.0 Hackathon, VESIT",
+      result: "1st Runner-up · 2nd Place",
+      kind: "runner-up",
+      logoUrl: "/logos/codecell.png",
+      description:
+        "Built Countersign, an AI trading copilot that treats the LLM as an untrusted translator, so every order is verified deterministically and needs the trader's passkey before an isolated executor places it.",
+      technologies: ["Next.js", "FastAPI", "PostgreSQL"],
+      repo: "CMPN-CODECELL/Syrus7_CodeYodha",
+      repoUrl: "https://github.com/CMPN-CODECELL/Syrus7_CodeYodha",
+    },
+  ],
 } as const;

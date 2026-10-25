@@ -159,6 +159,7 @@ export const getContent = cache(async (): Promise<Content> => {
         };
       }),
       writing: DATA.writing,
+      achievements: DATA.achievements,
       openSource: osSnap.docs.map((d) => {
         const o = d.data();
         return {
