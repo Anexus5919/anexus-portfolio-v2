@@ -432,9 +432,9 @@ export const DATA = {
       name: "MUI X",
       repo: "mui/mui-x",
       repoUrl: "https://github.com/mui/mui-x",
-      prCount: 21,
+      prCount: 37,
       description:
-        "Shipped 20+ fixes across MUI's advanced React component library, spanning the Scheduler, Charts, Pickers, and Data Grid packages, improving accessibility, recurring-event handling, and date-adapter correctness.",
+        "Shipped 35+ fixes across MUI's advanced React component library, spanning the Scheduler, Data Grid, Pickers, Charts, Tree View, and Chat packages, improving accessibility, recurring-event handling, and date-adapter correctness.",
       prs: [
         {
           number: "#22162",
@@ -557,15 +557,106 @@ export const DATA = {
             "[pickers] Use calendar day tokens in AdapterMomentHijri and AdapterMomentJalaali formats",
           url: "https://github.com/mui/mui-x/pull/22974",
         },
+        {
+          number: "#22874",
+          title:
+            "[scheduler] Carry custom event data through the edit dialog submit",
+          url: "https://github.com/mui/mui-x/pull/22874",
+        },
+        {
+          number: "#22958",
+          title: "[data grid] Prevent cell editing from resurrecting a deleted row",
+          url: "https://github.com/mui/mui-x/pull/22958",
+        },
+        {
+          number: "#22981",
+          title:
+            "[pickers] Flag the first and last visible day cell across year boundaries",
+          url: "https://github.com/mui/mui-x/pull/22981",
+        },
+        {
+          number: "#22987",
+          title:
+            "[DateRangeCalendar] Fix auto month-switch across the year boundary",
+          url: "https://github.com/mui/mui-x/pull/22987",
+        },
+        {
+          number: "#23005",
+          title: "[tree view] Discard superseded lazy-loading responses",
+          url: "https://github.com/mui/mui-x/pull/23005",
+        },
+        {
+          number: "#23006",
+          title:
+            "[tree view] Prevent duplicate ids in multi-select arrow navigation",
+          url: "https://github.com/mui/mui-x/pull/23006",
+        },
+        {
+          number: "#23007",
+          title:
+            "[scheduler] Keep the occurrence date when editing only one recurring event",
+          url: "https://github.com/mui/mui-x/pull/23007",
+        },
+        {
+          number: "#23008",
+          title:
+            "[chat] Cap markdown input length to avoid a render-thread freeze",
+          url: "https://github.com/mui/mui-x/pull/23008",
+        },
+        {
+          number: "#23326",
+          title:
+            "[pickers] Keep the gridcell role and the column index on filler cells",
+          url: "https://github.com/mui/mui-x/pull/23326",
+        },
+        {
+          number: "#23341",
+          title: "[tree view] Use useId for the default tree id",
+          url: "https://github.com/mui/mui-x/pull/23341",
+        },
+        {
+          number: "#23637",
+          title:
+            "[scheduler] Pass the weekday token to the monthly recurrence labels",
+          url: "https://github.com/mui/mui-x/pull/23637",
+        },
+        {
+          number: "#23641",
+          title: "[DataGridPremium] Clear the aggregation from the column menu",
+          url: "https://github.com/mui/mui-x/pull/23641",
+        },
+        {
+          number: "#23681",
+          title:
+            "[charts] Disable the SparkLineChart axis listener when nothing uses it",
+          url: "https://github.com/mui/mui-x/pull/23681",
+        },
+        {
+          number: "#23721",
+          title:
+            "[charts-pro] Fix image export under a CSP when styles come only from <link> stylesheets",
+          url: "https://github.com/mui/mui-x/pull/23721",
+        },
+        {
+          number: "#23749",
+          title:
+            "[scheduler] Add timeGridEvents option to keep overnight timed events in the time grid",
+          url: "https://github.com/mui/mui-x/pull/23749",
+        },
+        {
+          number: "#23753",
+          title: "[data grid] Keep empty first and last cells when copying rows",
+          url: "https://github.com/mui/mui-x/pull/23753",
+        },
       ],
     },
     {
       name: "Jenkins",
       repo: "jenkinsci/jenkins",
       repoUrl: "https://github.com/jenkinsci/jenkins",
-      prCount: 4,
+      prCount: 7,
       description:
-        "Shipped multiple UI fixes to the world's leading open-source CI/CD automation server, spanning the build parameters dialog, the build-log and console pages, and autocomplete dropdown behavior.",
+        "Shipped multiple UI fixes to the world's leading open-source CI/CD automation server, spanning the build parameters dialog, the build-log and console pages, form validation errors, and combobox and autocomplete behavior on desktop and touch devices.",
       prs: [
         {
           number: "#26574",
@@ -589,15 +680,32 @@ export const DATA = {
             "Fix combobox and autocomplete dropdown selection beyond the first item",
           url: "https://github.com/jenkinsci/jenkins/pull/26884",
         },
+        {
+          number: "#26818",
+          title:
+            "fix(ui): show concise error on form field validation failure during page load",
+          url: "https://github.com/jenkinsci/jenkins/pull/26818",
+        },
+        {
+          number: "#26922",
+          title: "Fix combobox suggestion list flashing on click",
+          url: "https://github.com/jenkinsci/jenkins/pull/26922",
+        },
+        {
+          number: "#26923",
+          title:
+            "Fix dropdown suggestions requiring a double tap on touch devices",
+          url: "https://github.com/jenkinsci/jenkins/pull/26923",
+        },
       ],
     },
     {
       name: "Accord Project",
       repo: "accordproject/template-playground",
       repoUrl: "https://github.com/accordproject/template-playground",
-      prCount: 3,
+      prCount: 6,
       description:
-        "Resolved ESLint errors across the codebase, fixed a UI layout overflow, and added a confirmation modal before loading sample templates.",
+        "Resolved ESLint errors across the codebase, fixed layout overflow and dark-mode legibility issues, added a confirmation modal before loading sample templates, and restored the Cicero CLI draft command with updated docs.",
       prs: [
         {
           number: "#440",
@@ -614,6 +722,23 @@ export const DATA = {
           title:
             "feat(ux): add confirmation modal before loading sample template",
           url: "https://github.com/accordproject/template-playground/pull/868",
+        },
+        {
+          number: "#893",
+          title:
+            "fix(ui): theme Settings modal subtree to make text legible in dark mode",
+          url: "https://github.com/accordproject/template-playground/pull/893",
+        },
+        {
+          number: "#917",
+          title: "feat(cicero-cli): re-add draft command using the template-engine",
+          url: "https://github.com/accordproject/template-archive/pull/917",
+        },
+        {
+          number: "#547",
+          title:
+            "docs: update cicero CLI reference and hello world tutorial for the current commands",
+          url: "https://github.com/accordproject/techdocs/pull/547",
         },
       ],
     },
